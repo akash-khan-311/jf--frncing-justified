@@ -29,7 +29,7 @@ export default function Footer() {
               <Image
                 width={100}
                 height={100}
-                src="/assests/logo/footerLogo.png"
+                src="/assets/logo/footerLogo.png"
                 alt="JF Logo"
                 className="w-12 h-12 object-contain"
               />

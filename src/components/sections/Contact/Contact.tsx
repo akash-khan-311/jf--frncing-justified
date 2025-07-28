@@ -3,12 +3,12 @@ import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import { useState } from "react";
 const categoryData = [
-  { id: 1, name: "Coimbatore", imagePath: "/assests/icon/coimbatore.png", },
-  { id: 2, name: "Chennai", imagePath: "/assests/icon/chennai.png", },
-  { id: 3, name: "Hyderabad", imagePath: "/assests/icon/hydrebad.png", },
-  { id: 4, name: "Goa", imagePath: "/assests/icon/goa.png", },
-  { id: 5, name: "Kochi", imagePath: "/assests/icon/kochi.png", },
-  { id: 6, name: "Mumbai", imagePath: "/assests/icon/mumbai.png", },
+  { id: 1, name: "Coimbatore", imagePath: "/assets/icon/coimbatore.png", },
+  { id: 2, name: "Chennai", imagePath: "/assets/icon/chennai.png", },
+  { id: 3, name: "Hyderabad", imagePath: "/assets/icon/hydrebad.png", },
+  { id: 4, name: "Goa", imagePath: "/assets/icon/goa.png", },
+  { id: 5, name: "Kochi", imagePath: "/assets/icon/kochi.png", },
+  { id: 6, name: "Mumbai", imagePath: "/assets/icon/mumbai.png", },
 ]
 const Contact = () => {
   const [activeTab, setActiveTab] = useState(0);

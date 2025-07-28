@@ -39,7 +39,7 @@ const WhyUs = () => {
             {/* Card Content */}
             <div className="relative z-10 space-y-4">
               <Image
-                src={"/assests/icon/badg-1.png"}
+                src={"/assets/icon/badg-1.png"}
                 alt="Badge 1"
                 width={80}
                 height={80}
@@ -66,7 +66,7 @@ const WhyUs = () => {
             {/* Card Content */}
             <div className="relative z-10 space-y-4 text-white">
               <Image
-                src={"/assests/icon/badge-2.png"}
+                src={"/assets/icon/badge-2.png"}
                 alt="Badge 1"
                 width={80}
                 height={80}
@@ -95,7 +95,7 @@ const WhyUs = () => {
             {/* Card Content */}
             <div className="relative z-10 space-y-4">
               <Image
-                src={"/assests/icon/badge-3.png"}
+                src={"/assets/icon/badge-3.png"}
                 alt="Badge 1"
                 width={80}
                 height={80}

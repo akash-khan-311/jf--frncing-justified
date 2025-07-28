@@ -65,7 +65,7 @@ export default function NavBar() {
         {/* Centered Logo */}
         <div className="">
           <Link href="/" aria-label="Company Logo" >
-            <Image src='/assests/logo/logo.png' alt="Company Logo" width={50} height={50} />
+            <Image src='/assets/logo/logo.png' alt="Company Logo" width={50} height={50} />
           </Link>
         </div>
 
@@ -91,7 +91,7 @@ export default function NavBar() {
       <div className={`md:hidden fixed inset-0 backdrop-blur-3xl bg-white/50 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform-none' : '-translate-x-full'}`}>
         <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-800">
           <Link href="/" aria-label="Company Logo" >
-            <Image src='/assests/logo/logo.png' alt="Company Logo" width={50} height={50} />
+            <Image src='/assets/logo/logo.png' alt="Company Logo" width={50} height={50} />
           </Link>
           <button onClick={() => setIsMenuOpen(false)} aria-label="Close menu" className="text-black cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

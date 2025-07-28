@@ -19,17 +19,17 @@ const Features = () => {
             data-aos-once="false"
 
             className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row items-center gap-x-4">
-            <Image src={'/assests/icon/icon-1.png'} width={80} height={80} alt="icon" />
+            <Image src={'/assets/icon/icon-1.png'} width={80} height={80} alt="icon" />
             <div>
               <h4 className="text-xl text-white font-medium">Premium</h4>
               <p className="text-white">Products</p>
             </div>
-            <Image src={'/assests/icon/icon-2.png'} width={80} height={80} alt="icon" />
+            <Image src={'/assets/icon/icon-2.png'} width={80} height={80} alt="icon" />
             <div>
               <h4 className="text-xl text-white font-medium">4000+</h4>
               <p className="text-white">Google Review</p>
             </div>
-            <Image src={'/assests/icon/icon-3.png'} width={80} height={80} alt="icon" />
+            <Image src={'/assets/icon/icon-3.png'} width={80} height={80} alt="icon" />
             <div>
               <h4 className="text-xl text-white font-medium">Delivery</h4>
               <p className="text-white">Across India</p>
