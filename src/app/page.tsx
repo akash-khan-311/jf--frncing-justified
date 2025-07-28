@@ -9,7 +9,8 @@ import { useEffect } from 'react';
 import WhyUs from '@/components/sections/WhyUs/WhyUs';
 import Branding from '@/components/sections/Branding/Branding';
 import Testimonial from '@/components/sections/Testimonials/Testimonials';
-import ContactForm from '@/components/ContactForm';
+
+import Contact from '@/components/sections/Contact/Contact';
 
 
 
@@ -30,9 +31,10 @@ export default function Home() {
         <WhyUs />
       </div>
       <Branding />
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <Testimonial />
-        <ContactForm />
+        <Contact />
+
       </div>
     </div >
   );
