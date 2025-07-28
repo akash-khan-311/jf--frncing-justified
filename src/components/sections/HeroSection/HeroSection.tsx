@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import Button from "@/components/Button";
 
 const slides = [
   {
@@ -30,7 +31,7 @@ const slides = [
 
 const HeroSection = () => {
   return (
-    <div className=" px-4 md:px-10 py-10 relative ">
+    <div className=" px-4 md:px-10  relative ">
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{
@@ -50,7 +51,7 @@ const HeroSection = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             {/* Wrapper */}
-            <div className="relative w-full lg:h-[calc(100vh-200px)] h-[400px]  overflow-hidden shadow-lg">
+            <div className="relative w-full lg:h-[calc(100vh-100px)] h-[400px]  overflow-hidden shadow-lg">
               {/* Image */}
               <Image
                 fill
@@ -65,6 +66,9 @@ const HeroSection = () => {
               <div className="absolute z-20 inset-0 flex flex-col items-center justify-center text-center text-white px-4 md:hidden">
                 <h2 className="text-4xl font-bold mb-2">{slide.title}</h2>
                 <p className="text-sm">{slide.description}</p>
+                <div>
+                  <Button>Shop Now</Button>
+                </div>
               </div>
 
               {/* Desktop Layout */}
@@ -77,6 +81,9 @@ const HeroSection = () => {
                     {slide.title}
                   </h2>
                   <p className="text-sm md:text-base text-black">{slide.description}</p>
+                  <div>
+                    <Button>Shop Now</Button>
+                  </div>
                 </div>
               </div>
             </div>

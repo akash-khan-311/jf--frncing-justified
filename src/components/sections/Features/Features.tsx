@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <div className="relative rounded-xl h-full w-full bg-[#002B55] py-20 px-4 my-10">
+    <section className="relative rounded-xl h-full w-full bg-[#002B55] py-20 px-4 mt-10">
       <div className="flex justify-center flex-col items-center">
         <h2 className="relative z-10 text-white text-4xl font-bold text-center">
 
@@ -40,7 +40,7 @@ const Features = () => {
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_500px,#1B7FE166,transparent)] ">
 
       </div>
-    </div>
+    </section>
   );
 };
 

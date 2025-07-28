@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../Button";
 
 const Card = ({ title, price }: { title: string, price: string }) => {
   return (
@@ -9,9 +10,7 @@ const Card = ({ title, price }: { title: string, price: string }) => {
       <div className="space-y-2 p-4">
         <h1 className="text-xl font-medium">{title}</h1>
         <p className="text-sm ">${price}</p>
-        <button className="my-4 px-8 py-2 rounded-full bg-[rgb(176,_221,_29)] hover:bg-[rgb(156,_201,_19)] transition-colors cursor-pointer">
-          Shop Now
-        </button>
+        <Button>Shop Now</Button>
       </div>
     </div>
   );
