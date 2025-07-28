@@ -9,34 +9,35 @@ import SectionTitle from '@/components/SectionTitle';
 
 const testimonials = [
   {
-    name: 'Ariana Gupta',
+    name: 'Adnan Rahman',
     feedback:
-      'The website design exceeded my expectations. It’s responsive, fast, and user-friendly. Would highly recommend their service!',
+      'Excellent service from start to finish. The site is clean, responsive, and performs flawlessly. Highly satisfied!',
     image:
-      'https://randomuser.me/api/portraits/women/65.jpg',
+      'https://www.shutterstock.com/image-photo/handsome-happy-african-american-bearded-600nw-2460702995.jpg',
   },
   {
-    name: 'James Robertson',
+    name: 'Faisal Hossain',
     feedback:
-      'Great customer support and clean code. The deployment was smooth and well-documented.',
+      'Professional team with great communication. The project was delivered before the deadline and looks amazing.',
     image:
-      'https://randomuser.me/api/portraits/men/45.jpg',
+      'https://thumbs.dreamstime.com/b/african-american-male-fashion-model-hat-portrait-50038580.jpg',
   },
   {
-    name: 'Mehedi Hasan',
+    name: 'Khalid Mahmud',
     feedback:
-      'They delivered exactly what I envisioned. I loved the animations and smooth scroll features. Amazing work!',
+      'Loved the overall design and functionality. Smooth animations and great UX. Will definitely work again.',
     image:
-      'https://randomuser.me/api/portraits/men/75.jpg',
+      'https://t4.ftcdn.net/jpg/06/08/55/73/360_F_608557356_ELcD2pwQO9pduTRL30umabzgJoQn5fnd.jpg',
   },
   {
-    name: 'Fatema Noor',
+    name: 'Nashit Alam',
     feedback:
-      'Outstanding attention to detail and excellent communication. Every section was pixel-perfect.',
+      'The work exceeded my expectations. Fast loading, modern UI, and SEO-friendly. Great job!',
     image:
-      'https://randomuser.me/api/portraits/women/22.jpg',
+      'https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg',
   },
 ];
+
 
 
 // Variants for sliding animation
