@@ -30,7 +30,7 @@ const slides = [
 
 const HeroSection = () => {
   return (
-    <div className="w-screen px-4 md:px-10 py-10 relative">
+    <div className=" px-4 md:px-10 py-10 relative ">
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{

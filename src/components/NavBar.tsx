@@ -34,7 +34,9 @@ export default function NavBar() {
   ]
 
   return (
-    <header className="relative w-full z-50 ">
+    <header data-aos="fade-down"
+
+      className="relative w-full z-50 ">
       <div className="flex items-center justify-between py-4 container mx-auto px-3 md:px-0  w-full  ">
         {/* Desktop Navigation (Left) */}
         <nav className="hidden md:flex items-center gap-6 font-medium  text-gray-600 dark:text-gray-400 flex-1">
