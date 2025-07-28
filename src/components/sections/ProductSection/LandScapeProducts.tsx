@@ -10,6 +10,7 @@ const CardItems = [
   { id: 1, title: "JF Australian Trellis", price: "₹6,962.00", img: 'https://jfproducts.in/wp-content/uploads/2025/02/australian-trellis_image.jpg' },
   { id: 2, title: "JF Privezy Grass Wall", price: "₹1,646.10 – ₹18,284.10", img: "https://jfproducts.in/wp-content/uploads/2025/02/privezy-latest-feat-img.jpg" },
   { id: 3, title: "JF Privezy Grass Wall", price: "₹1,646.10 – ₹18,284.10", img: "https://jfproducts.in/wp-content/uploads/2025/05/lp-1.png" },
+  { id: 4, title: "JF Australian Trellis", price: "₹6,962.00", img: 'https://jfproducts.in/wp-content/uploads/2025/02/australian-trellis_image.jpg' },
 
 
 ]
@@ -19,12 +20,12 @@ const LandScapeProducts = () => {
       <SectionTitle className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4" title="Landscape Products" />
       {/* Custom Navigation Buttons */}
       <div className="absolute top-1/2 -translate-y-1/2 -left-2 z-10">
-        <button className="custom-prev1 cursor-pointer border bg-white  text-black p-2 rounded-full md:p-3  shadow-md">
+        <button className="custom-prev-land cursor-pointer border bg-white  text-black p-2 rounded-full md:p-3  shadow-md">
           <FaArrowLeftLong />
         </button>
       </div>
       <div className="absolute top-1/2 -translate-y-1/2 -right-2 z-10">
-        <button className="custom-next1 cursor-pointer border bg-white text-black p-2 rounded-full md:p-3  shadow-md">
+        <button className="custom-next-land cursor-pointer border bg-white text-black p-2 rounded-full md:p-3  shadow-md">
           <FaArrowRightLong />
         </button>
       </div>
@@ -38,8 +39,8 @@ const LandScapeProducts = () => {
           }}
           spaceBetween={50}
           navigation={{
-            nextEl: ".custom-next1",
-            prevEl: ".custom-prev1",
+            nextEl: ".custom-next-land",
+            prevEl: ".custom-prev-land",
           }}
           loop={true}
           className="mySwiper1"
@@ -56,8 +57,8 @@ const LandScapeProducts = () => {
 
           }}
         >
-          {CardItems.map((item, index) => (
-            <SwiperSlide key={index} className="relative">
+          {CardItems.map((item) => (
+            <SwiperSlide key={item.id} className="relative">
               <Card img={item.img} title={item.title} price={item.price} />
             </SwiperSlide>
           ))}

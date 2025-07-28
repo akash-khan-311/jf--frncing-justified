@@ -21,12 +21,12 @@ const AgriculturalProducts = () => {
       <SectionTitle className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4" title="Agricultural Products" />
       {/* Custom Navigation Buttons */}
       <div className="absolute top-1/2 -translate-y-1/2 -left-2 z-10">
-        <button className="custom-prev1 cursor-pointer border bg-white  text-black p-2 rounded-full md:p-3  shadow-md">
+        <button className="custom-prev-agri cursor-pointer border bg-white  text-black p-2 rounded-full md:p-3  shadow-md">
           <FaArrowLeftLong />
         </button>
       </div>
       <div className="absolute top-1/2 -translate-y-1/2 -right-2 z-10">
-        <button className="custom-next1 cursor-pointer border bg-white text-black p-2 rounded-full md:p-3  shadow-md">
+        <button className="custom-next-agri cursor-pointer border bg-white text-black p-2 rounded-full md:p-3  shadow-md">
           <FaArrowRightLong />
         </button>
       </div>
@@ -40,8 +40,8 @@ const AgriculturalProducts = () => {
           }}
           spaceBetween={50}
           navigation={{
-            nextEl: ".custom-next1",
-            prevEl: ".custom-prev1",
+            nextEl: ".custom-next-agri",
+            prevEl: ".custom-prev-agri",
           }}
           loop={true}
           className="mySwiper1"
