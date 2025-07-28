@@ -27,10 +27,10 @@ export default function NavBar() {
   }, [isMenuOpen]);
 
   const navItems = [
-    { href: 'home', label: 'Home' },
-    { href: 'shop', label: 'Shop' },
-    { href: 'blogs', label: 'Blogs' },
-    { href: 'contact', label: 'Contact' },
+    { href: '#home', label: 'Home' },
+    { href: '#shop', label: 'Shop' },
+    { href: '#blogs', label: 'Blogs' },
+    { href: '#contact', label: 'Contact' },
   ]
 
   return (

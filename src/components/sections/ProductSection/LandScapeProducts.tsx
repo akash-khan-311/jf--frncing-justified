@@ -7,16 +7,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 const CardItems = [
-  { title: "JF Australian Trellis", price: "$50" },
-  { title: "JF Privezy Grass Wall", price: "$60" },
-  { title: "JF Australian Trellis", price: "$50" },
-  { title: "JF Privacy Screen", price: "$70" },
-  { title: "JF Australian Trellis", price: "$50" },
-  { title: "JF Privezy Grass Wall", price: "$60" },
-  { title: "JF Privacy Screen", price: "$70" },
-  { title: "JF Privacy Screen", price: "$70" },
-  { title: "JF Privacy Screen", price: "$70" },
-  { title: "JF Privacy Screen", price: "$70" },
+  { id: 1, title: "JF Australian Trellis", price: "₹6,962.00", img: 'https://jfproducts.in/wp-content/uploads/2025/02/australian-trellis_image.jpg' },
+  { id: 2, title: "JF Privezy Grass Wall", price: "₹1,646.10 – ₹18,284.10", img: "https://jfproducts.in/wp-content/uploads/2025/02/privezy-latest-feat-img.jpg" },
+  { id: 3, title: "JF Privezy Grass Wall", price: "₹1,646.10 – ₹18,284.10", img: "https://jfproducts.in/wp-content/uploads/2025/05/lp-1.png" },
+
+
 ]
 const LandScapeProducts = () => {
   return (
@@ -63,7 +58,7 @@ const LandScapeProducts = () => {
         >
           {CardItems.map((item, index) => (
             <SwiperSlide key={index} className="relative">
-              <Card title={item.title} price={item.price} />
+              <Card img={item.img} title={item.title} price={item.price} />
             </SwiperSlide>
           ))}
 

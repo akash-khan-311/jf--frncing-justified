@@ -1,3 +1,4 @@
+import BlurText from "@/components/BlurText";
 import Button from "@/components/Button";
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
@@ -7,16 +8,30 @@ const WhyUs = () => {
     <section className="my-40 relative">
       <div className="lg:w-1/2 mx-auto text-center px-4">
         <div className="flex justify-center">
-          <SectionTitle className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4 " title="Why Us" />
+          <SectionTitle className="text-3xl py-2 md:text-4xl lg:text-5xl font-semibold text-center mb-4 " title="Why Us" />
         </div>
-        <p>We specialize in delivering durable and innovative fencing solutions built to last. With a focus on quality and trust, we help secure spaces across industries and communities.</p>
+        <BlurText
+          text="We specialize in delivering durable and innovative fencing solutions built to last. With a focus on quality and trust, we help secure spaces across industries and communities."
+          delay={150}
+          animateBy="words"
+          direction="top"
+
+          className="text-center"
+        />
+        <p></p>
       </div>
 
 
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 lg:mt-32">
         {/* First Card */}
-        <div className="mt-16 flex justify-center">
+        <div data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false" className="mt-16 flex justify-center">
           <div className="relative bg-white rounded-xl p-8  shadow-md overflow-hidden">
             {/* Gradient Overlay (Top-Right and Bottom-Left) */}
             <div className="absolute inset-0 rounded-xl z-0 bg-gradient-to-bl from-blue-200 via-transparent to-gray-200 pointer-events-none"></div>
@@ -66,7 +81,13 @@ const WhyUs = () => {
           </div>
         </div>
         {/* third Card */}
-        <div className="mt-16 flex justify-center">
+        <div data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false" className="mt-16 flex justify-center">
           <div className="relative bg-white rounded-xl p-8  shadow-md overflow-hidden">
             {/* Gradient Overlay (Top-Right and Bottom-Left) */}
             <div className="absolute inset-0 rounded-xl z-0 bg-gradient-to-bl from-blue-200 via-transparent to-gray-200 pointer-events-none"></div>

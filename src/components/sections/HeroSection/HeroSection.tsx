@@ -11,21 +11,27 @@ import Button from "@/components/Button";
 const slides = [
   {
     id: 1,
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg',
-    title: "JF Australian Trellis",
+    img: 'https://jfproducts.in/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-12-at-17.40.02_38f1a968.jpg',
+    title: "JF Privezy Grass Wall ",
     description: "Where Aesthetics Meet Durability",
   },
   {
     id: 2,
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg',
-    title: "JF Privezy Grass Wall",
+    img: 'https://jfproducts.in/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-12-at-17.40.01_1ff90cc7.jpg',
+    title: "JF Barbed Wire",
     description: "The Perfect Blend Of Greenery",
   },
   {
     id: 3,
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg',
-    title: "JF Privacy Screen",
+    img: 'https://jfproducts.in/wp-content/uploads/2025/05/Picture3.jpg',
+    title: "Knotted Fence",
     description: "Enhance Your Outdoor Space",
+  },
+  {
+    id: 4,
+    img: 'https://jfproducts.in/wp-content/uploads/2025/05/jf-ppriveze-1024x1024.jpg',
+    title: "JF Polihex ",
+    description: "Reliable Fencing for Every Need",
   },
 ];
 
@@ -54,6 +60,7 @@ const HeroSection = () => {
             <div className="relative w-full lg:h-[calc(100vh-100px)] h-[400px]  overflow-hidden shadow-lg">
               {/* Image */}
               <Image
+                priority
                 fill
                 src={slide.img}
                 alt={slide.title}
@@ -74,7 +81,13 @@ const HeroSection = () => {
               {/* Desktop Layout */}
               <div className="hidden md:flex h-full">
                 <div className="w-1/2 h-full relative">
-                  {/* Image already shown as background */}
+                  <Image
+                    priority
+                    fill
+                    src={slide.img}
+                    alt={slide.title}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <div className="w-1/2 p-6 flex flex-col justify-center z-20 bg-white/70 backdrop-blur-md">
                   <h2 className="text-5xl font-bold mb-2 text-black">
